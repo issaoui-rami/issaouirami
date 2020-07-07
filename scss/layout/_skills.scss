@@ -1,0 +1,93 @@
+.skills{
+  span{
+    font-family: $fontsTitre;
+  }
+  .progress {
+    margin-bottom: 5px;
+    background-color: #88939d;
+    height: 5px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    .progress-bar{
+      background-color: $secondoColor;
+      text-align: left;
+      width: 0;
+      transition: width 4s;
+    }
+
+  }
+  .skill-porcentage {
+    float: right;
+    color: $principalColor !important;
+    font-weight: 600 !important;
+  }
+
+}
+.skills-cms {
+  .progress {
+    .progress-bar {
+      background-color: $autreColor;
+    }
+  }
+}
+// skill progress bar circulaire
+
+.single-skils-area {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .circle {
+        position: relative;
+        z-index: 10;
+        margin-bottom: 15px;
+    }
+    .skills-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        @include transform(translate(-50%, -50%));
+        span {
+            font-size: 24px;
+            color: $principalColor;
+            font-weight: 600;
+            font-family: $fontsTitre;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1;
+        }
+        img{
+          width: 35px;
+        }
+    }
+}
+
+// langue skill
+.langue{
+  display: flex;
+  justify-content: space-between;
+  .circle-Lang, .circle-vide {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    @media #{$breakpoint-xs}{
+      height: 15px;
+      width: 15px;
+    }
+  }
+  .circle-Lang {
+    background-color: $secondoColor;
+  }
+  .circle-vide{
+    background-color: #88939d;
+  }
+
+}
+.langue-title{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: $fontsTitre;
+    color: $principalColor;
+  }

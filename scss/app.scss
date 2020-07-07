@@ -1,0 +1,30 @@
+
+/* font-awesome icon */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+@import "utilite/theme_color";
+@import "utilite/fonts";
+@import "mixins/mixin";
+@import "utilite/responsive";
+@import "utilite/preloader";
+/* @import "utilite/preloader"; */
+
+
+
+/* biblio css */
+
+@import 'bootstrap.min.css';
+@import 'classy-nav.css';
+@import 'animate.css';
+
+/* lyout composant */
+
+@import "layout/global";
+@import "layout/headermenu";
+@import "layout/slider";
+@import "layout/skills";
+@import "layout/experiences";
+@import "layout/service";
+@import "layout/footer";

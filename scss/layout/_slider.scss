@@ -1,0 +1,46 @@
+section.slider {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  @media #{$breakpoint-xs}{
+    display: block;
+    height: inherit;
+    margin-top: 60px;
+    .profil-box {
+      order: 1;
+    }
+    .profil-infos{
+      order: 2;
+    }
+  }
+}
+  .sous-titre {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: $titreColor;
+  }
+  .titre-1 {
+    font-size: 50px;
+    @media #{$breakpoint-xs-m}{
+      font-size: 30px;
+    }
+  }
+  .tag-color{
+    color: $secondoColor;
+  }
+  .titre-3 {
+    font-weight: 900;
+  }
+  .btn-bg {
+    margin-right: 20px;
+  }
+  #typed{
+    height: 35px;
+    @media #{$breakpoint-xs-m}{
+      font-size: 18px;
+    }
+  }
+  .photo-profil{
+    position: relative;
+  }
