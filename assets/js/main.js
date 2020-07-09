@@ -3,6 +3,16 @@
 
 	var browserWindow = $(window);
 
+	// add class sidebar
+	var current = location.pathname;
+	$('.classynav ul li a').each(function () {
+		var $this = $(this);
+		// if the current path is like this link, make it active
+		if ($this.attr('href').indexOf(current) !== -1) {
+			$this.addClass('active');
+		}
+	})
+
 	// Preloader Active Code
 	browserWindow.on('load', function () {
 		$('.preloader').delay(800).fadeOut('500', function () {

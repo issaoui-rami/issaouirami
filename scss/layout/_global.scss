@@ -27,7 +27,7 @@ h1,h2,h3{
 p {
     font-family: $fonts;
     color: $textColor;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -357,7 +357,7 @@ img {
 /* style Interets */
 .connaissances {
   .connaissance {
-      background-color: #001c33;
+      background-color: $principalColor;
       border-left: 1px solid #e1e1e1;
       text-align: center;
       padding: 20px;
