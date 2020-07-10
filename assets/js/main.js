@@ -10,13 +10,14 @@
 		});
 	});
 
+
 	//  ScrollUp Active Code
-if ($.fn.scrollUp) {
-		browserWindow.scrollUp({
-				scrollSpeed: 1000,
-				scrollText: '<i class="fa fa-angle-up"></i>'
-		});
-}
+	if ($.fn.scrollUp) {
+			browserWindow.scrollUp({
+					scrollSpeed: 1000,
+					scrollText: '<i class="fa fa-angle-up"></i>'
+			});
+	}
 
 	// progress bar animation code
 
@@ -25,40 +26,6 @@ if ($.fn.scrollUp) {
 						return $(this).attr("aria-valuenow") + "%";
 				}
 			);
-
-
-	// progress bar circulaire code
-	if ($.fn.circleProgress) {
-			$('#circle').circleProgress({
-					size: 130,
-					emptyFill: "#88939d",
-					fill: '#393689',
-					thickness: '3',
-					reverse: true
-			});
-			$('#circle2').circleProgress({
-					size: 130,
-					emptyFill: "#88939d",
-					fill: '#6e4d12',
-					thickness: '3',
-					reverse: true
-			});
-			$('#circle3').circleProgress({
-					size: 130,
-					emptyFill: "#88939d",
-					fill: '#702c42',
-					thickness: '3',
-					reverse: true
-			});
-			$('#circle4').circleProgress({
-					size: 130,
-					emptyFill: "#88939d",
-					fill: '#e53418',
-					thickness: '3',
-					reverse: true
-			});
-	}
-
 
 	// Nav Active Code
 	if ($.fn.classyNav) {
@@ -85,6 +52,5 @@ if ($.fn.scrollUp) {
 		showCursor: false,
   });
 
-
-
 })(jQuery);
+

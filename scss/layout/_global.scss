@@ -7,6 +7,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    cursor: none;
 }
 
 
@@ -224,6 +225,7 @@ img {
   }
 }
 .main-right {
+  position: relative;
   background-color: $whiteColor;
   background: -webkit-#{$main-right};
   background: $main-right;
@@ -402,7 +404,47 @@ img {
     }
   }
 }
+/* -------------------------- satrt cursor website -------------------------- */
+#pointer-dot {
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 2.5px solid $principalColor;
+    position: fixed;
+    border-radius: 4px;
+    z-index: 99999;
+    pointer-events: none;
+    transition: border-color 0.5s;
+}
 
+#pointer-ring {
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    padding: 15px;
+    border: 2px solid $secondoColor;
+    position: fixed;
+    border-radius: 100px;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+/* -------------------------- end cursor website -------------------------- */
+
+/* -------------------------- start particles website -------------------------- */
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #e0e0e0, #fff);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100vh;
+}
+/* -------------------------- end particles website -------------------------- */
 
 /* page contact */ 
 .carte-map {

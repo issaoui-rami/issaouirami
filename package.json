@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "node-sass": "^4.13.0",
-    "package.json": "^2.0.1"
+    "package.json": "^2.0.1",
+    "scrollpup": "0.0.1"
   }
 }
