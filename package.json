@@ -21,7 +21,7 @@
     "static-server": "^2.2.1"
   },
   "dependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "package.json": "^2.0.1",
     "scrollpup": "0.0.1"
   }
